@@ -1,0 +1,57 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SliderComponent } from './component/slider/slider.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BannerComponent } from './component/banner/banner.component';
+import { ShowItemComponent } from './component/show-item/show-item.component';
+import { ShowDetailComponent } from './pages/show-detail/show-detail.component';
+import { TabViewModule } from 'primeng/tabview';
+import { VideoEmbedComponent } from './component/video-embed/video-embed.component';
+import { ImageModule } from 'primeng/image';
+import { CarouselModule } from 'primeng/carousel';
+import { ShowListComponent } from './pages/show-list/show-list.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { PaginatorModule } from 'primeng/paginator';
+import { GenresComponent } from './pages/genres/genres.component';
+import { TabMenuModule } from 'primeng/tabmenu';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    SliderComponent,
+    BannerComponent,
+    ShowItemComponent,
+    ShowDetailComponent,
+    VideoEmbedComponent,
+    ShowListComponent,
+    GenresComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    TabViewModule,
+    ImageModule,
+    CarouselModule,
+    InputTextModule,
+    FormsModule,
+    PaginatorModule,
+    TabMenuModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
